@@ -9,7 +9,7 @@ Welcome to our Global NFT (Design) ! This project is a snapshot of our semester'
 - **Marketplace:** Buy and sell unique NFTs.
 
 
-* Open `[http://localhost:3000](https://maaztariq007.github.io/Frontend_Designs-NFT/Index.html)` in your browser.
+* Open `https://maaztariq007.github.io/Frontend_Designs-NFT/Index.html` in your browser.
 
 ## Note
 
