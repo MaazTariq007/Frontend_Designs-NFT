@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global NFT</title>
+    <link rel="icon" type="image/png" href="./images/asia.png"/>
+
+    <!-- Sheets Links -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <!-- CDN Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="hero-header">
+
+            <div class="logo"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+            <button class="toggle" onclick="menu.showModal()"><i class='fa fa-bars'></i></button>
+            <button class="wallet-responvise-mode" onclick="payment.showModal()">
+                <i class='fas fa-wallet'></i>
+            </button>
+
+            <div class="nav-center">
+                <nav class="navbar">
+                    <ul class="nav-content navigation-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="market.html">MARKET</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="create.html">CREATE</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-links">
+                        <ul class="nav-content navigations-icons">
+                            <li class="nav-item nav-wallet ">
+                                <button class="wallet-btn" onclick="payment.showModal()">
+                                    Connect Wallet
+                                    <i class='fas fa-wallet'></i>
+                                </button>
+                                <!-- dialog -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    <i class='fa fa-user'></i> </a>
+                                <div class="dropdown-content">
+                                    <a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a>
+                                    <a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a>
+                                    <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a>
+                                    <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a>
+                                    <a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a>
+                                    <a href="#"><i class='fa fa-adjust icons-dropdown'></i>Theme</a>
+                                    <a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="context">
+                <h1 class="hero-text">Explore</h1>
+                <h1 class="hero-text">NFT Art Trading.</h1>
+                <p>Welcome to Global NFT, your gateway to the captivating world of NFT art trading. Embark on a journey
+                    to discover, collect, and trade unique digital creations. Start exploring today!</p>
+                <button class="buy-button">Learn NFT Here</button>
+            </div>
+            <div class="slider">
+                <div class="art-details">
+                    <p><i class="fa fa-info-circle"></i>
+                        climate Art - “No Planet B” by Melania Badosa.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+    </button>
+
+    <main>
+        <!-- component-1-contianer -->
+        <div class="component-1">   
+            <div class="img-container">
+                <img src="./images/ape edited.png" alt="NFT ape" class="ape">
+            </div>
+            <div class="component-one-text">
+                <p class="component-one-text-para">NFT.org Powered by </p>
+                <h1>NFT Protocol-Premier Decentralized NFT Trading</h1>
+            </div>
+        </div>
+
+        <div class="cards-container">
+
+            <!-- Card-One  -->
+            <div class="cards card-one">
+                <div class="trending">
+                    🔥<p class="trending-text">Trending</p>
+                </div>
+                <div class="img-card-one"></div>
+                <div class="content-card">
+                    <h2 class="card-title">Azuki</h2>
+                    <div class="card-details">
+                        <span class="author-name">Chiru Labs</span>
+                        <p class="price">ETH 2.2</p>
+                    </div>
+                    <div class="card-button">
+                        <button class="card-btn all-btn">Mint Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-Two -->
+            <div class="cards card-two">
+                <div class="trending">
+                    🔥<p class="trending-text">Trending</p>
+                </div>
+                <div class="img-card-two"></div>
+                <div class="content-card">
+                    <h2 class="card-title">Bored Ape</h2>
+                    <div class="card-details">
+                        <span class="author-name">Global</span>
+                        <p class="price">ETH 2.8</p>
+                    </div>
+                    <div class="card-button">
+                        <button class="card-btn all-btn">Mint Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-Three -->
+            <div class="cards card-three">
+                <div class="trending">
+                    🔥<p class="trending-text">Trending</p>
+                </div>
+                <div class="img-card-three"></div>
+                <div class="content-card">
+                    <h2 class="card-title">DeGods</h2>
+                    <div class="card-details">
+                        <span class="author-name">Frank DeGods</span>
+                        <p class="price">ETH 1.7</p>
+                    </div>
+                    <div class="card-button">
+                        <button class="card-btn all-btn">Mint Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-Four -->
+            <div class="cards card-four">
+                <div class="trending">
+                    🔥<p class="trending-text">Trending</p>
+                </div>
+                <div class="img-card-four"></div>
+                <div class="content-card">
+                    <h2 class="card-title">Doodle</h2>
+                    <div class="card-details">
+                        <span class="author-name">Julian Holguin</span>
+                        <p class="price">ETH 2.5</p>
+                    </div>
+                    <div class="card-button">
+                        <button class="card-btn all-btn">Mint Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- component-2-contianer -->
+        <div class="component-2">
+            <div class="component-two-overlay">
+                <div class="headings">
+                    <h1>Are you looking for artist ?</h1>
+                    <h3>Well, we have what you are looking for.</h3>
+                    <p>
+                        At Global NFT, we empower artists of all genres to transform their creativity into valuable
+                        NFTs. Whether you're a painter, musician, photographer, or any other type of artist, our
+                        platform offers a seamless avenue to mint and showcase your work as unique digital assets. Join
+                        us in revolutionizing the art world and reaching a global audience through NFT technology.</p>
+                    <button class="buy-button all-btn">Hire One</button>
+                </div>
+                <div class="animated-cards">
+                    <div class="com-two-wrapper">
+                        <div class="com-card com-card-1">
+                            <img src="./images/com-card-3.jpg" alt="">
+                            <p>Hand Drawn Artist</p>
+                        </div>
+                        <div class="com-card com-card-2">
+                            <img src="./images/com-card-2.jpeg" alt="">
+                            <p>Hand Drawn Artist</p>
+                        </div>
+                        <div class="com-card com-card-3">
+                            <img src="./images/com-card-1.JPG" alt="">
+                            <p>Digital Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- minting-contianer -->
+        <div class="mint-contianer">
+            <div class="mint-line"></div>
+            <h1> Mint Your NFT</h1>
+            <div class="steps step-one">
+                <div class="count"><strong>01</strong></div>
+                <div class="mint-container-text">
+                    <h2>Connect Wallet</h2>
+                    <p>Begin your NFT journey by seamlessly connecting your wallet. Securely link your digital assets
+                        for a smooth and immersive art trading experience.</p>
+                </div>
+            </div>
+            <div class="steps step-two">
+                <div class="count"><strong>02</strong></div>
+                <div class="mint-container-text">
+                    <h2>Visit NFT's Market</h2>
+                    <p>Explore our vibrant NFT market, where creativity knows no bounds. Immerse yourself in a world of
+                        unique digital artistry from talented creators worldwide.</p>
+                </div>
+            </div>
+            <div class="steps step-three">
+                <div class="count"><strong>03</strong></div>
+                <div class="mint-container-text">
+                    <h2>Buy NFT Or Collection</h2>
+                    <p>Indulge in the thrill of owning exclusive NFTs or curated collections. Discover and acquire
+                        digital treasures that resonate with your artistic sensibilities.</p>
+                </div>
+            </div>
+            <div class="steps step-four">
+                <div class="count"><strong>04</strong></div>
+                <div class="mint-container-text">
+                    <h2>Personalized NFT</h2>
+                    <p>Unleash your artistic vision. Transform your creations into personalized NFTs, showcasing your
+                        unique identity in the ever-evolving landscape of digital art.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- component-3-contianer -->
+        <div class="component-3">
+            <div class="component-three-img"></div>
+            <div class="component-three-text">
+                <h1>Upcoming NFT Extravaganza: Igniting Creativity and Innovation
+                </h1>
+                <p>Join us in anticipation of our upcoming NFT event that promises to ignite creativity and innovation
+                    like never before. Immerse yourself in a captivating world of digital artistry, groundbreaking
+                    technology, and unparalleled opportunities for collectors, creators, and enthusiasts. Stay tuned for
+                    an unforgettable experience!.</p>
+                <button class="component-three-btn all-btn">Read More</button>
+
+
+            </div>
+        </div>
+
+        <!-- article-contianer -->
+        <h1 class="news-feed">News Feeds / Articles</h1>
+        <article>
+            <div class="news news-one">
+                <div class="overlay">
+                    <h1>Darius Puia BakaArts Increase in sales.
+                    </h1>
+                    <p>Darius Puia's Baka Arts has witnessed a remarkable surge in sales. The captivating fusion of
+                        artistry and innovation has resonated with collectors, propelling the value and recognition of
+                        his creations to new heights. </p>
+                    <button class="news-btn all-btn">Read More</button>
+
+                </div>
+            </div>
+            <div class="news news-two">
+                <div class="overlay">
+
+                    <h1>Avril15, a hand drawn artist sold NFT in 15 millions.</h1>
+                    <p>Hand-drawn virtuoso Avrill has astounded the art world, achieving a staggering $15 million
+                        through an NFT sale. A testament to the fusion of traditional skill and digital innovation, this
+                        milestone heralds the dawn of a new era, redefining the worth of artistic craftsmanship in the
+                        realm of digital collectibles.</p>
+                    <button class="news-btn all-btn">Read More</button>
+
+                </div>
+            </div>
+            <div class="news news-three">
+                <div class="overlay">
+
+                    <h1>NFT in Hong Kong: Bored Ape Yacht Club owners seek merchandise deals.</h1>
+                    <p>In Hong Kong, the Bored Ape Yacht Club owner has expressed a demand for a lucrative merchandise
+                        deal, signaling the NFT community's growing influence in the mainstream market.</p>
+                    <button class="news-btn all-btn">Read More</button>
+
+                </div>
+            </div>
+            <div class="news news-four">
+                <div class="overlay">
+
+                    <h1>Azuki has a huge sales in Opensea.</h1>
+                    <p>In a thrilling turn of events, Azuki has unveiled a colossal sale on the renowned NFT
+                        marketplace, OpenSea. </p>
+                    <button class="news-btn all-btn">Read More</button>
+                </div>
+            </div>
+            <div class="news news-five">
+                <div class="overlay">
+
+                    <h1>Beeple's US$69 millions NFT art sale.</h1>
+                    <p>Renowned digital artist Beeple made history with a groundbreaking NFT sale, amassing an
+                        astounding $60 million. This watershed moment not only solidified NFTs' significance in the art
+                        world but also spotlighted the fusion of technology and creativity. Beeple's trailblazing
+                        artwork, "Everydays: The First 5000 Days," captured collectors' attention, reflecting the
+                        increasing allure of digital collectibles. The sale's reverberations underscored the
+                        transformative power of blockchain in reshaping how art is perceived, acquired, and valued in
+                        the modern era.</p>
+                    <!-- <a href="#" class="news-btn">Read More</a> -->
+                    <button class="news-btn all-btn">Read More</button>
+
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-upper-wrapper">
+            <div class="footer-upper">
+
+                <div class="logo-footer"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+
+                <div class="social-links">
+                    <ul class="footer-content">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-discord'></i>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-twitter'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-instagram'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-reddit'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-youtube'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-tiktok'></i> </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-lower">
+            <div class="footer-section-one footer-section">
+                <h2><a href="./Index.html"><i class='fas fa-globe-asia'></i></a> GLOBAL NFT's</h2>
+                <p>Step into a world where art meets technology at Global NFT. Uncover extraordinary digital creations,
+                    connect with talented artists, and embark on a journey of the innovation and imagination. Welcome to a
+                    new era of artistic exploration , expression and digital world.</p>
+            </div>
+            <div class="footer-section-two footer-section">
+                <ul>
+                    <li><a href="./Index.html">HOME</a></li>
+                    <li><a href="./market.html">MARKET</a></li>
+                    <li><a href="create.html">CREATE</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-three footer-section">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">favorites</a></li>
+                    <li><a href="#">My Collections</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-four footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-five footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Ventures</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Copyright:
+            <a href="./Index.html"><i class='fas fa-globe-asia footer-logo-icon'></i>Global NFT's
+            </a>
+        </div>
+    </footer>
+
+
+    <dialog id="payment">
+        <div class="payment-heading">
+            <h2>Connect Your Wallet</h2>
+        </div>
+        <hr class="line-1">
+        <div class="payment-method">
+            <div class="payment-type">
+                <h3>Meta Mask</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Coinbase Wallet</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Wallet Connect </h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Ladger</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Phantom</h3>
+                <em>BNB Chain</em>
+            </div>
+            <div class="payment-type">
+                <h3>Seal Coin</h3>
+                <em>New</em>
+            </div>
+
+        </div>
+
+        <div class="show-more">
+            <a href="#payment" style="text-decoration: none; padding: 5px;">Show
+                More</a>
+            <button class="payment-btn-close" onclick="payment.close()">X</button>
+        </div>
+    </dialog>
+
+    <dialog id="menu">
+        <div class="menu-wrapper">
+            <div class="menu-main-links">
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./market.html">Market</a></li>
+                    <li><a href="#">create</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="menu-dropdown">
+                <ul>
+                    <li><a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a></li>
+                    <li><a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a></li>
+                    <li> <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a></li>
+                    <li> <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a></li>
+                    <li><a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a></li>
+                    <li><a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a></li>
+                </ul>
+
+            </div>
+
+            <div class="social-links">
+                <ul class="footer-content">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-discord'></i>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-twitter'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-instagram'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-reddit'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-youtube'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-tiktok'></i> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <button class="menu-close-btn" onclick="menu.close()">X</button>
+    </dialog>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".steps"), {
+            max: 13,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+            axis: null,
+        });
+    </script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

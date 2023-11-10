@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global NFT/create</title>
+    <link rel="icon" type="image/png" href="./images/asia.png"/>
+
+    <!-- cdn / style Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="hero-header">
+
+        <div class="logo"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+        <button class="toggle" onclick="menu.showModal()"><i class='fa fa-bars'></i></button>
+        <button class="wallet-responvise-mode" onclick="payment.showModal()">
+            <i class='fas fa-wallet'></i>
+        </button>
+
+        <div class="nav-center">
+            <nav class="navbar">
+                <ul class="nav-content navigation-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">MARKET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CREATE</a>
+                    </li>
+                </ul>
+
+                <div class="nav-links">
+                    <ul class="nav-content navigations-icons">
+                        <li class="nav-item nav-wallet ">
+                            <button class="wallet-btn" onclick="payment.showModal()">
+                                Connect Wallet
+                                <i class='fas fa-wallet'></i>
+                            </button>
+                            <!-- dialog -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                <i class='fa fa-user'></i> </a>
+                            <div class="dropdown-content">
+                                <a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a>
+                                <a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a>
+                                <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a>
+                                <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a>
+                                <a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a>
+                                <a href="#"><i class='fa fa-adjust icons-dropdown'></i>Theme</a>
+                                <a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+
+    <main>
+        <div class="main-bar">
+            <ul class="main-bar-items">
+                <li><i class='fas fa-bullhorn main-icons'></i><a href="#">Marketing</a></li>
+                <li><i class='fa fa-bar-chart main-icons'></i><a href="#">Insights</a></li>
+                <li><i class='fas fa-chart-line main-icons'></i><a href="#">Revenue</a></li>
+                <li><i class='fa fa-th-large main-icons'></i><a href="#">Collection</a></li>
+                <!-- <li id="clog"><a href="#"><i class='fa fa-cog main-icons'></i></a></li> -->
+            </ul>
+        </div>
+        <div class="data-content">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Edit NFT's</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Create New</button>
+            </div>
+            <div id="London" class="tabcontent">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" class="search" placeholder="Search NFT">
+                    </form>
+                    <button class="search-bar-btn">Search</button>
+                    <i class='fa fa-sliders search-icon'></i>
+                    <i class="fa fa-gear search-icon"></i>
+
+                </div>
+                <div class="nft-data">
+                    <div class="headings">
+                        <div class="number">no</div>
+                        <div class="nft-name">NFT Name<i class='fa fa-arrows-v'></i></div>
+                        <div class="collection">Collection<i class='fa fa-arrows-v'></i></div>
+                        <div class="onwer">Total Owner<i class='fa fa-arrows-v'></i></div>
+                        <div class="copies">Total Copies<i class='fa fa-arrows-v'></i></div>
+                        <div class="Minted">Total Minted<i class='fa fa-arrows-v'></i></div>
+                        <div class="Status">Status</div>
+                        <div class="Actions">Actions</div>
+                    </div>
+
+                    <div class="data">
+                        <div class="list-number">1</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending bean card three.jpg" alt="image-1">
+                            <p>Beans</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global1107</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">7</a></div>
+                        <div class="list-copies">10</div>
+                        <div class="list-mint">1</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">2</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending card parallel four.JPG" alt="image-1">
+                            <p>Parallel</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global1224</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">5</a></div>
+                        <div class="list-copies">9</div>
+                        <div class="list-mint">4</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">3</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending sapy seals card ten.jpg" alt="image-1">
+                            <p>Sapy</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global3301</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">2</a></div>
+                        <div class="list-copies">6</div>
+                        <div class="list-mint">2</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">4</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending ragnarok card six.jpg" alt="image-1">
+                            <p>Ragnarok</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global2704</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">0</a></div>
+                        <div class="list-copies">0</div>
+                        <div class="list-mint">0</div>
+                        <div class="list-status">
+                            <p class="Status-text-negative">off sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">5</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending avrill card eight.jpeg" alt="image-1">
+                            <p>Avrill</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global7777</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">4</a></div>
+                        <div class="list-copies">10</div>
+                        <div class="list-mint">5</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">6</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending superrare card nine .jpg" alt="image-1">
+                            <p>Super</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global7131</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">7</a></div>
+                        <div class="list-copies">6</div>
+                        <div class="list-mint">2</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">7</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending axie card five.JPG" alt="image-1">
+                            <p>Axie</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global3111</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">5</a></div>
+                        <div class="list-copies">5</div>
+                        <div class="list-mint">3</div>
+                        <div class="list-status">
+                            <p class="Status-text-postive">on sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">8</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending captainz memeland card seven.jpg" alt="image-1">
+                            <p>Memeland</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Globa0109</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">0</a></div>
+                        <div class="list-copies">1</div>
+                        <div class="list-mint">0</div>
+                        <div class="list-status">
+                            <p class="Status-text-negative">off sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="list-number">9</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending creepz card two.jpg" alt="image-1">
+                            <p>Creepz</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global188</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">0</a></div>
+                        <div class="list-copies">4</div>
+                        <div class="list-mint">0</div>
+                        <div class="list-status">
+                            <p class="Status-text-negative">off sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+                    <div class="data last-one">
+                        <div class="list-number">10</div>
+                        <div class="list-name-img">
+                            <img src="./images/Trending card doodles one.jpg" alt="image-1">
+                            <p>Doodles</p>
+                        </div>
+                        <div class="list-collection">
+                            <p>Global2116</p>
+                            <i class='fa fa-external-link'></i>
+                        </div>
+                        <div class="list-onwer"><a href="#">1</a></div>
+                        <div class="list-copies">4</div>
+                        <div class="list-mint">0</div>
+                        <div class="list-status">
+                            <p class="Status-text-negative">off sale</p>
+                        </div>
+                        <div class="list-action">
+                            <i class='fa fa-external-link'></i>
+                            <i class='fa fa-eye'></i>
+                            <i class='fa fa-shopping-cart'></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="data-nav">
+                    <button class="data-nav-btn">1</button>
+                    <button class="data-nav-btn">2</button>
+                    <button class="data-nav-btn">3</button>
+                    <button class="data-nav-btn">4</button>
+                    <button class="data-nav-btn">5</button>
+                    <button class="data-nav-btn">6</button>
+                    <button class="data-nav-btn">Next</button>
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <div class="create-container">
+                    <div class="image-uploader-text">
+                        <h2 class="main-text">NFT Content</h2>
+                        <p>Uplaod image, video, 3D model. File type supported: JPG, PNG, GIF, SVG, MP4, MP3, WEBM, WAV,
+                            OGG, GLB.</p>
+                        <p>Max size : 100 MB</p>
+                    </div>
+                    <div class="image-uploader">
+                        <canvas id="canv1"></canvas>
+                        <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+                    </div>
+
+                    <div class="details">
+                        <div class="blockchain-container">
+                            <h2>NFT Blockchain</h2>
+                            <form action="#">
+                                <select name="blockchain" class="blockchain" required>
+                                    <option value="Ethereum">Ethereum</option>
+                                    <option value="Solana">Solana</option>
+                                    <option value="Cardano">Cardano</option>
+                                    <option value="Tezos">Tezos</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="collection-container">
+                            <h2>Collection</h2>
+                            <form action="#">
+                                <select name="collection-nft" class="collection-nft" required>
+                                    <option value="ERC-721">ERC-721</option>
+                                    <option value="ERC-666">ERC-666</option>
+                                    <option value="ERC-795">ERC-795</option>
+                                    <option value="ERC-231">ERC-231</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="information">
+                        <h2>Name</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Write your NFT name">
+                        </form>
+                        <div class="info-flex-container">
+                            <h2>Set price / Copies</h2>
+                            <form action="#" class="info-flex-container">
+                                <input type="text" placeholder="Set price" required>
+                                <input type="text" placeholder="Number of copies" required>
+                            </form>
+
+                        </div>
+                        <h2>Discription</h2>
+                        <form class="discription">
+                            <input type="text" placeholder="Write small discription" required>
+                            <button class="publish">Publish</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-upper-wrapper">
+            <div class="footer-upper">
+
+                <div class="logo-footer"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+
+                <div class="social-links">
+                    <ul class="footer-content">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-discord'></i>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-twitter'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-instagram'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-reddit'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-youtube'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-tiktok'></i> </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-lower">
+            <div class="footer-section-one footer-section">
+                <h2><a href="./Index.html"><i class='fas fa-globe-asia'></i></a> GLOBAL NFT's</h2>
+                <p>Step into a world where art meets technology at Global NFT. Uncover extraordinary digital creations,
+                    connect with talented artists, and embark on a journey of the innovation and imagination. Welcome to
+                    a
+                    new era of artistic exploration , expression and digital world.</p>
+            </div>
+            <div class="footer-section-two footer-section">
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./market.html">Market</a></li>
+                    <li><a href="create.html">Create</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-three footer-section">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">favorites</a></li>
+                    <li><a href="#">My Collections</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-four footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-five footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Ventures</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Copyright:
+            <a href="./Index.html"><i class='fas fa-globe-asia footer-logo-icon'></i>Global NFT's
+            </a>
+        </div>
+    </footer>
+
+    <dialog id="payment">
+        <div class="payment-heading">
+            <h2>Connect Your Wallet</h2>
+        </div>
+        <hr class="line-1">
+        <div class="payment-method">
+            <div class="payment-type">
+                <h3>Meta Mask</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Coinbase Wallet</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Wallet Connect </h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Ladger</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Phantom</h3>
+                <em>BNB Chain</em>
+            </div>
+            <div class="payment-type">
+                <h3>Seal Coin</h3>
+                <em>New</em>
+            </div>
+
+        </div>
+
+        <div class="show-more">
+            <a href="#payment" style="text-decoration: none; padding: 5px;">Show
+                More</a>
+            <button class="payment-btn-close" onclick="payment.close()">X</button>
+        </div>
+    </dialog>
+
+    <dialog id="menu">
+        <div class="menu-wrapper">
+            <div class="menu-main-links">
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./market.html">Market</a></li>
+                    <li><a href="#">create</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="menu-dropdown">
+                <ul>
+                    <li><a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a></li>
+                    <li><a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a></li>
+                    <li> <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a></li>
+                    <li> <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a></li>
+                    <li><a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a></li>
+                    <li><a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a></li>
+                </ul>
+
+            </div>
+
+            <div class="social-links">
+                <ul class="footer-content">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-discord'></i>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-twitter'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-instagram'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-reddit'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-youtube'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-tiktok'></i> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <button class="menu-close-btn" onclick="menu.close()">X</button>
+    </dialog>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        function showPreview(event) {
+            if (event.target.files.length > 0) {
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("file-ip-1-preview");
+                preview.src = src;
+                preview.style.display = "block";
+            }
+        }
+    </script>
+
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+
+    <script>
+        function upload() {
+            var imgcanvas = document.getElementById("canv1");
+            var fileinput = document.getElementById("finput");
+            var image = new SimpleImage(fileinput);
+            image.drawTo(imgcanvas);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global NFT/market</title>
+    <link rel="icon" type="image/png" href="./images/asia.png"/>
+
+    <!-- Sheets Links -->
+    <link rel="stylesheet" href="market.css">
+    <script src="index.js"></script>
+    <!-- CDN Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="hero-header">
+
+        <div class="logo"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+
+        <div class="nav-center">
+            <nav class="navbar">
+                <ul class="nav-content navigation-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">MARKET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="create.html">CREATE</a>
+                    </li>
+                </ul>
+
+                <div class="nav-links">
+                    <ul class="nav-content navigations-icons">
+                        <li class="nav-item nav-wallet ">
+                            <button class="wallet-btn" onclick="payment.showModal()">
+                                Connect Wallet
+                                <i class='fas fa-wallet'></i>
+                            </button>
+                            <!-- dialog -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                <i class='fa fa-user'></i> </a>
+                            <div class="dropdown-content">
+                                <a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a>
+                                <a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a>
+                                <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a>
+                                <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a>
+                                <a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a>
+                                <a href="#"><i class='fa fa-adjust icons-dropdown'></i>Theme</a>
+                                <a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+    </button>
+
+    <!-- Slider start -->
+    <div class="slider-container">
+        <button class="toggle" onclick="menu.showModal()"><i class='fa fa-bars'></i></button>
+        <button class="wallet-responvise-mode" onclick="payment.showModal()">
+            <i class='fas fa-wallet'></i>
+        </button>
+        <ul class="slider">
+            <li>
+                <img class="slider-img" src="./images/slider four.JPG" alt="Image 3">
+                <div class="overlay-text">
+                    <h1>Axie<img class="slider-verified" src="./images/verified.png" alt=""></h1>
+                    <h3>by Nguyen Thanh Trung</h3>
+                    <h4>1,379 items - 0.55 ETh</h4>
+                    <button>Mint Now</button>
+                    <button>View Drop</button>
+                </div>
+                <div class="bell-icon"><i class='fa fa-bell'></i></div>
+            </li>
+            <li>
+                <img class="slider-img" src="./images/slider one.JPG" alt="Image 3">
+                <div class="overlay-text">
+                    <h1>Avril15<img class="slider-verified" src="./images/verified.png" alt=""></h1>
+                    <h3>by Avril15</h3>
+                    <h4>124 items - 0.9 ETh</h4>
+                    <button>Mint Now</button>
+                    <button>View Drop</button>
+                </div>
+                <div class="bell-icon"><i class='fa fa-bell'></i></div>
+            </li>
+            <li>
+                <img class="slider-img" src="./images/slider two.JPG" alt="Image 3">
+                <div class="overlay-text">
+                    <h1>AZUKI<img class="slider-verified" src="./images/verified.png" alt=""></h1>
+                    <h3>by Chiru Labs</h3>
+                    <h4>6,724 items - 0.6 ETh</h4>
+                    <button>Mint Now</button>
+                    <button>View Drop</button>
+                </div>
+                <div class="bell-icon"><i class='fa fa-bell'></i></div>
+            </li>
+            <li>
+                <img class="slider-img" src="./images/slider three.JPG" alt="Image 3">
+                <div class="overlay-text">
+                    <h1>Shizuka<img class="slider-verified" src="./images/verified.png" alt=""></h1>
+                    <h3>by Badmon/Kaiyu Liu</h3>
+                    <h4>411 items - 0.7 ETh</h4>
+                    <button>Mint Now</button>
+                    <button>View Drop</button>
+                </div>
+                <div class="bell-icon"><i class='fa fa-bell'></i></div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- Slider end -->
+
+    <!-- tabs start  -->
+
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <form action="#">
+                <input class="search" type="text" name="search" placeholder="Seacrh for a collection">
+                <i class='fa fa-search'></i>
+            </form>
+        </div>
+        <div class="live-data">
+            live data
+        </div>
+    </div>
+
+    <div class="tab-wrapper">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Trending</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Top</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Deal</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+            <div class="details">
+                <div class="list-items sr">rn</div>
+                <div class="list-items">Collections</div>
+                <div class="list-items">Volume</div>
+                <div class="list-items floor-price">Floor Price</div>
+                <div class="list-items floor-sale">Floor Sale</div>
+                <div class="list-items top-offer">Top Offer</div>
+                <div class="list-items supply">Listed/Supply</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">01</div>
+                <div class="list-items name">Bored Ape Yatch Club<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>1.1k<img class="ethereum" src="./images/ethereum.png" alt="ethereum"></div><span>+30.51%</span>
+                </div>
+                <div class="list-items floor-price">33.36<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"></div>
+                <div class="list-items floor-sale">
+                    <div>33<img class="ethereum" src="./images/ethereum.png" alt="ethereum"></div><span>+4.27%</span>
+                </div>
+                <div class="list-items top-offer">33.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">318/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">02</div>
+                <div class="list-items name">DEGods<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>754.10<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">8.29<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>8.19<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+1.33%</span>
+                </div>
+                <div class="list-items top-offer">8.18<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">279/8,846</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">03</div>
+                <div class="list-items name">Azuki<img class="verified" src="./images/verified.png" alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>646.02<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-47.12%</span>
+                </div>
+                <div class="list-items floor-price">5.49<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>5.29<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+3.66%</span>
+                </div>
+                <div class="list-items top-offer">5.42<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">828/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">04</div>
+                <div class="list-items name">CryptoPunk<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>644.15<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+60.48%</span>
+                </div>
+                <div class="list-items floor-price">49.86<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>45<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+10.8%</span>
+                </div>
+                <div class="list-items top-offer">-</div>
+                <div class="list-items supply">1,057/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">05</div>
+                <div class="list-items name">Mutant Ape Yatch Club<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>560.91<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-19.52%</span>
+                </div>
+                <div class="list-items floor-price">6.04<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>5.91<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+2.29%</span>
+                </div>
+                <div class="list-items top-offer">6<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">711/19,481</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">06</div>
+                <div class="list-items name">Pudgy Penguins<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>456.76<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">4.06<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>3.78<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+7.22%</span>
+                </div>
+                <div class="list-items top-offer">4.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">512/8,888</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">07</div>
+                <div class="list-items name">Milady Maker<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>330.49<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-18.36%</span>
+                </div>
+                <div class="list-items floor-price">2.75<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>2.63<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+4.68%</span>
+                </div>
+                <div class="list-items top-offer">2.69<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">984/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">08</div>
+                <div class="list-items name">The Captainz<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>174.50<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">6.1<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items floor-sale">
+                    <div>6.1<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+3.21%</span>
+                </div>
+                <div class="list-items top-offer">5.9<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">155/9,999</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">09</div>
+                <div class="list-items name">The Potatoz<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>158.16<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">2.14<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>1.69<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+26.07%</span>
+                </div>
+                <div class="list-items top-offer">1.89<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">153/9,999</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">10</div>
+                <div class="list-items name">Fidenza<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>156.69<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">80<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items floor-sale">
+                    <div>70<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+14.29%</span>
+                </div>
+                <div class="list-items top-offer">50<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">48/999</div>
+            </div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <div class="details">
+                <div class="list-items sr">rn</div>
+                <div class="list-items">Collections</div>
+                <div class="list-items">Volume</div>
+                <div class="list-items floor-price">Floor Price</div>
+                <div class="list-items floor-sale">Floor Sale</div>
+                <div class="list-items top-offer">Top Offer</div>
+                <div class="list-items supply">Listed/Supply</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">01</div>
+                <div class="list-items name">Bored Ape Yatch Club <img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>1.3M<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">32.85<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>32.25<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+1.86%</span>
+                </div>
+                <div class="list-items top-offer">32.77<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">334/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">02</div>
+                <div class="list-items name">CryptoPunk<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>1.1M<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">49.86<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>56.49<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-11.74%</span>
+                </div>
+                <div class="list-items top-offer">-</div>
+                <div class="list-items supply">1,054/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">03</div>
+                <div class="list-items name">Mutant Ape Yacht Club<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>981.3K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">5.96<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>5.91<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+0.85%</span>
+                </div>
+                <div class="list-items top-offer">5.91<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">735/19,481</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">04</div>
+                <div class="list-items name">Azuki<img class="verified" src="./images/verified.png" alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>687.3K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">5.45<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>5.29<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+3.02%</span>
+                </div>
+                <div class="list-items top-offer">5.38<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">806/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">05</div>
+                <div class="list-items name">OtherDeed For Otherside<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>668.5K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.59<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.58<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+0.93%</span>
+                </div>
+                <div class="list-items top-offer">0.58<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">1895/100,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">06</div>
+                <div class="list-items name">Clone X<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>403.0K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">1.72<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>1.65<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+4.84%</span>
+                </div>
+                <div class="list-items top-offer">1.69<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">12/6719,500</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">07</div>
+                <div class="list-items name">MoonBirds<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>338.2K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">1.59<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>1.59<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+6.71%</span>
+                </div>
+                <div class="list-items top-offer">1.52<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">278/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">08</div>
+                <div class="list-items name">Doodles<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>296.2K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">1.59<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>1.55<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+2.69%</span>
+                </div>
+                <div class="list-items top-offer">1.56<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">542/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">09</div>
+                <div class="list-items name">Bored Ape Kennel Club<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>263.2K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">2.45<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>2.28<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+7.46%</span>
+                </div>
+                <div class="list-items top-offer">2.31<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">233/ 9,602</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">10</div>
+                <div class="list-items name">Meebits<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>233.2K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">1.16<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>1.11<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span>+4.46%</span>
+                </div>
+                <div class="list-items top-offer">1.13<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">233/20,000</div>
+            </div>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <div class="details">
+                <div class="list-items sr">rn</div>
+                <div class="list-items">Collections</div>
+                <div class="list-items">Volume</div>
+                <div class="list-items floor-price">Floor Price</div>
+                <div class="list-items floor-sale">Floor Sale</div>
+                <div class="list-items top-offer">Top Offer</div>
+                <div class="list-items supply">Listed/Supply</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">01</div>
+                <div class="list-items name">Killer GF<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>22.2K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"></div>
+                    <span>+30.51%</span>
+                </div>
+                <div class="list-items floor-price">0.07<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"></div>
+                <div class="list-items floor-sale">
+                    <div>0.06<img class="ethereum" src="./images/ethereum.png" alt="ethereum"></div><span>+18.33%</span>
+                </div>
+                <div class="list-items top-offer">0.06<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">618/7,777</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">02</div>
+                <div class="list-items name">77-Bit<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>21.1K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.10<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.09<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+17.29%</span>
+                </div>
+                <div class="list-items top-offer">0.09<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">155/7,777</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">03</div>
+                <div class="list-items name">Everai heroes: Duo<img class="verified" src="./images/verified.png"
+                        alt="verified tick">
+                </div>
+                <div class="list-items volume">
+                    <div>9.4K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.04<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.04<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+23.75%</span>
+                </div>
+                <div class="list-items top-offer">0.04<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">285/7,777</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">04</div>
+                <div class="list-items name">Stone Ape Club<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>4.3K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.01<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+46.15%</span>
+                </div>
+                <div class="list-items top-offer">0.01</div>
+                <div class="list-items supply">109/6,666</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">05</div>
+                <div class="list-items name">The Long Lost<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>3.0K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.02<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.02<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items top-offer">0.02<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">315/10,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">06</div>
+                <div class="list-items name">Cool Dogs Official<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>2.0K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.01<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-0%
+                    </span>
+                </div>
+                <div class="list-items top-offer">0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">147/5,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">07</div>
+                <div class="list-items name">Galaktic Gang<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>1.8K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.02<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>-</div>
+                </div>
+                <div class="list-items top-offer">0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">147/5,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">08</div>
+                <div class="list-items name">Jadu AVA<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>1.8K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.03<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum">
+                </div>
+                <div class="list-items floor-sale">
+                    <div>0.03<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items top-offer">0.02<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">370/11,111</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">09</div>
+                <div class="list-items name">Moon Ape Lab Genesis<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>1.6K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.02<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum"> </div>
+                <div class="list-items floor-sale">
+                    <div>0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                    <span>+67.03%</span>
+                </div>
+                <div class="list-items top-offer">0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">113/8,000</div>
+            </div>
+            <div class="list">
+                <div class="list-items sr">10</div>
+                <div class="list-items name">Hall Of Fame Goat Lodge<img class="verified" src="./images/verified.png"
+                        alt="verified tick"></div>
+                <div class="list-items volume">
+                    <div>1.4K<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div>
+                </div>
+                <div class="list-items floor-price">0.01<img class="ethereum" src="./images/ethereum.png"
+                        alt="ethereum">
+                </div>
+                <div class="list-items floor-sale">
+                    <div>0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum"> </div><span
+                        class="lost">-20.36%</span>
+                </div>
+                <div class="list-items top-offer">0.01<img class="ethereum" src="./images/ethereum.png" alt="ethereum">
+                </div>
+                <div class="list-items supply">334/10,000</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- tabs end  -->
+
+    <!-- card starts -->
+
+    <main>
+        <!-- <div class="Carousel"> -->
+        <h1>Trending</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending sapy seals card ten.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Sappy Seals &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.4 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>245 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending superrare card nine .jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Superrare &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.35 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>575 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending avrill card eight.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Avrill15 &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.6 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>399 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending captainz memeland card seven.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Memeland &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.2 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>134 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending ragnarok card six.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Ragnarok &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.22 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>146 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending axie card five.JPG" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Axie &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.2 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>177 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending card parallel four.JPG" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Parallel &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.7 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>773 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending bean card three.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Parallel &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.7 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>773 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending creepz card two.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Creepz &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.57 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>347 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending card doodles one.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Doodles &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.3 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>167 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1>Top collections</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending card doodles one.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Doodles &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.3 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>167 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending creepz card two.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Creepz &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.57 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>347 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending bean card three.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Parallel &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.7 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>773 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending card parallel four.JPG" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Parallel &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.7 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>773 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending axie card five.JPG" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Axie &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.2 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>177 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending ragnarok card six.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Ragnarok &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.22 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>146 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending captainz memeland card seven.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Memeland &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.2 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>134 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending avrill card eight.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Avrill15 &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.6 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>399 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending superrare card nine .jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Superrare &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.35 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>575 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/Trending sapy seals card ten.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>Sappy Seals &check;</p>
+                        <div class="card-price">
+                            <div>
+                                <strong>Floor</strong>
+                                <p>0.4 Eth</p>
+                            </div>
+                            <div>
+                                <strong>Volume</strong>
+                                <p>245 Eth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- cards end  -->
+    <footer>
+        <div class="footer-upper-wrapper">
+            <div class="footer-upper">
+
+                <div class="logo-footer"><a href="./Index.html"><i class='fas fa-globe-asia'></i></a></div>
+
+                <div class="social-links">
+                    <ul class="footer-content">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-discord'></i>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-twitter'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-instagram'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-reddit'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-youtube'></i> </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">
+                                <i class='fab fa-tiktok'></i> </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-lower">
+            <div class="footer-section-one footer-section">
+                <h2><a href="./Index.html"><i class='fas fa-globe-asia'></i></a> GLOBAL NFT's</h2>
+                <p>Step into a world where art meets technology at Global NFT. Uncover extraordinary digital creations,
+                    connect with talented artists, and embark on a journey of the innovation and imagination. Welcome to
+                    a
+                    new era of artistic exploration , expression and digital world.</p>
+            </div>
+            <div class="footer-section-two footer-section">
+                <ul>
+                    <li><a href="./Index.html">HOME</a></li>
+                    <li><a href="./market.html">MARKET</a></li>
+                    <li><a href="create.html">CREATE</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-three footer-section">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">favorites</a></li>
+                    <li><a href="#">My Collections</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-four footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-five footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Ventures</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Copyright:
+            <a href="./Index.html"><i class='fas fa-globe-asia footer-logo-icon'></i>Global NFT's
+            </a>
+        </div>
+    </footer>
+
+    <dialog id="payment">
+        <div class="payment-heading">
+            <h2>Connect Your Wallet</h2>
+        </div>
+        <hr class="line-1">
+        <div class="payment-method">
+            <div class="payment-type">
+                <h3>Meta Mask</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Coinbase Wallet</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Wallet Connect </h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Ladger</h3>
+                <em>Popular</em>
+            </div>
+            <div class="payment-type">
+                <h3>Phantom</h3>
+                <em>BNB Chain</em>
+            </div>
+            <div class="payment-type">
+                <h3>Seal Coin</h3>
+                <em>New</em>
+            </div>
+
+        </div>
+
+        <div class="show-more">
+            <a href="#payment" style="text-decoration: none; padding: 5px;">Show
+                More</a>
+            <button class="payment-btn-close" onclick="payment.close()">X</button>
+        </div>
+    </dialog>
+
+    <dialog id="menu">
+        <div class="menu-wrapper">
+            <div class="menu-main-links">
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./market.html">Market</a></li>
+                    <li><a href="#">create</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="menu-dropdown">
+                <ul>
+                    <li><a href="#"><i class='fa fa-user icons-dropdown'></i>Profile</a></li>
+                    <li><a href="#"><i class='fa fa-eye icons-dropdown'></i>Watchlist</a></li>
+                    <li> <a href="#"><i class='fa fa-table icons-dropdown'></i>Collections</a></li>
+                    <li> <a href="#"><i class='fa fa-cog icons-dropdown'></i>Settings</a></li>
+                    <li><a href="#"><i class='fa fa-question-circle-o icons-dropdown'></i>Help</a></li>
+                    <li><a href="#"><i class='fa fa-language icons-dropdown'></i>Language</a></li>
+                </ul>
+
+            </div>
+
+            <div class="social-links">
+                <ul class="footer-content">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-discord'></i>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-twitter'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-instagram'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-reddit'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-youtube'></i> </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <i class='fab fa-tiktok'></i> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <button class="menu-close-btn" onclick="menu.close()">X</button>
+    </dialog>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                stagePadding: 50,
+                // dots:false,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
