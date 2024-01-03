@@ -7,9 +7,8 @@ Welcome to our Global NFT (Design) ! This project is a snapshot of our semester'
 - **Minting:** Easily create and mint NFTs.
 - **Showcase:** Personalized galleries for artists.
 - **Marketplace:** Buy and sell unique NFTs.
-
-
-* Open `https://maaztariq007.github.io/Frontend_Designs-NFT/Index.html` in your browser.
+<h3>Visit Website</h3>
+https://maaztariq007.github.io/Frontend_Designs-NFT/Index.html
 
 ## Note
 
